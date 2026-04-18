@@ -205,5 +205,5 @@ document.querySelectorAll(".wiz-top-btn").forEach(function(b){b.addEventListener
 N.openWizField=openWiz;}
 
 wireWizard();E.applyStart();E.initEngine();renderAll();updateSelTips("a");updateSelTips("b");}
-document.addEventListener("DOMContentLoaded",initApp);
+N.UI={init:initApp};
 })(window.Novus=window.Novus||{});
