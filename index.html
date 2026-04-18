@@ -9,7 +9,12 @@
 <body>
 <div id="app"></div>
 <script src="novus-data.js"></script>
+<script src="novus-models.js"></script>
 <script src="novus-engine.js"></script>
 <script src="novus-ui.js"></script>
+<script src="novus-utok.js"></script>
+<script>
+try{Novus.UI.init();}catch(e){document.getElementById("app").innerHTML='<pre style="color:#f85149;padding:2rem;font-size:1rem">Novus Love failed to start:\n\n'+e.message+'\n\n'+e.stack+'</pre>';}
+</script>
 </body>
 </html>
