@@ -1,5 +1,5 @@
 window.Novus={};(function(N){var D={};
-D.VERSION="4.1";
+D.VERSION="4.1.2";
 D.F={emotionRegulation:"Emotion Regulation",selfWorth:"Self-Worth",secureWithPartner:"Security with Partner",hope:"Hope",rejectionSensitivity:"Rejection Sensitivity",trustInPartner:"Trust in Partner",externalStress:"External Stress",selfExpectations:"Self-Expectations",health:"Overall Health",intimacy:"Intimacy",safety:"Safety",trust:"Trust",bond:"Bond",connection:"Connection",meaning:"Meaning",honesty:"Honesty",stability:"Stability",growth:"Growth",tension:"Tension",friction:"Friction",overall:"Overall",passion:"Passion",commitment:"Commitment",sternIntimacy:"Emotional Intimacy",reactivity:"Reactivity",withdrawal:"Withdrawal",attunement:"Attunement",resilience:"Resilience",expressiveness:"Expressiveness",selfRegulation:"Self-Regulation",adaptability:"Adaptability",windowOfTolerance:"Window of Tolerance",satirStance:"Communication Stance",vagalState:"Nervous System State"};
 D.friendly=function(k){return D.F[k]||k.replace(/([A-Z])/g," $1").replace(/^./,function(s){return s.toUpperCase();});};
 D.pct=function(v){return Math.round(v*100);};

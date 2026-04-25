@@ -1,3 +1,22 @@
+=== v4.1.2 (2026-04-25) ===
+HOTFIX — Direct source edits (no patch overlay)
+
+BUG FIXES
+- B1 Fixed: Wizard dice buttons now appear on Profile accordions (added wizField param "a"/"b" to profA/profB accordion calls)
+- B2 Fixed: UTOK Influence Matrix now renders in Relationship Metrics section (added N.UTOK_UI.renderAll() to renderAll)
+- B3 Fixed: Orphan blank elements hidden via CSS :empty selector (.info-card:empty{display:none})
+- B4 Fixed: Radar graphs enlarged and no longer clip text (viewBox expanded, labels offset increased, CSS set to width:100% responsive)
+- B5 Verified: Model weights grid layout already correct (4-col grid, title at top, Reset at bottom)
+- B6 Verified: Bio/Body Response render code already present and functional
+
+VERSION
+- Bumped D.VERSION to "4.1.2"
+
+FILES CHANGED
+- novus-data.js (version bump only)
+- novus-ui.js (B1 wizard params, B2 UTOK call, B4 radar geometry)
+- novus.css (B3 orphan hide, B4 radar responsive sizing)
+
 === v4.1.0 (2026-04-25) ===
 ENGINE FIXES
 - Fixed: Starting state now impacts both individuals (security, trust, hope, self-worth, rejection sensitivity, stress, emotion regulation)
