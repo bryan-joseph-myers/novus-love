@@ -49,7 +49,7 @@ html+=dimBar("Love",im.love,"#f85149");
 html+=dimBar("Freedom",im.freedom,"#3fb950");
 html+='<div style="text-align:center;margin-top:4px;font-size:.75rem;color:#8b949e">Quadrant: <span style="color:var(--text)">'+quad+'</span></div>';
 html+='<div style="font-size:.7rem;color:#8b949e;margin-top:2px;text-align:center">Ring size = autonomy level</div>';
-html+='</div>';if(el)el.innerHTML=html;if(el2)el2.innerHTML=html;}
+html+='</div>';if(el)el.innerHTML=html;}
 function renderRel(){
 var el=$("utokRel");var el2=$("utokRelInline");if(!el&&!el2)return;
 var html='<div class="utok-card">';
