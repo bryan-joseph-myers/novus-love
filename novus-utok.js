@@ -49,9 +49,9 @@ html+=dimBar("Love",im.love,"#f85149");
 html+=dimBar("Freedom",im.freedom,"#3fb950");
 html+='<div style="text-align:center;margin-top:4px;font-size:.75rem;color:#8b949e">Quadrant: <span style="color:var(--text)">'+quad+'</span></div>';
 html+='<div style="font-size:.7rem;color:#8b949e;margin-top:2px;text-align:center">Ring size = autonomy level</div>';
-html+='</div>';el.innerHTML=html;}
+html+='</div>';if(el)el.innerHTML=html;if(el2)el2.innerHTML=html;}
 function renderRel(){
-var el=$("utokRel");if(!el)return;
+var el=$("utokRel");var el2=$("utokRelInline");if(!el&&!el2)return;
 var html='<div class="utok-card">';
 html+='<div class="utok-card-title">Influence Matrix — Both Partners</div>';
 html+=utokSVG(null,280,280,true);
@@ -61,7 +61,7 @@ html+='<div style="font-size:.75rem"><span style="color:#3fb950">'+S.a.name+':</
 html+='<div style="font-size:.75rem"><span style="color:#bc8cff">'+S.b.name+':</span> '+E.getUtokQuadrant(imB)+'</div>';
 html+='</div>';
 html+='<div style="font-size:.7rem;color:#8b949e;margin-top:4px;text-align:center">Dashed ring = autonomy level. Closer dots = more aligned relational stance.</div>';
-html+='</div>';el.innerHTML=html;}
+html+='</div>';if(el)el.innerHTML=html;if(el2)el2.innerHTML=html;}
 function injectContainers(){
 var targets=[{after:"emotStateA",id:"utok_a"},{after:"emotStateB",id:"utok_b"},{after:"relRadar",id:"utokRel"}];
 for(var i=0;i<targets.length;i++){

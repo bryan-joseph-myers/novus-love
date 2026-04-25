@@ -1,0 +1,46 @@
+=== v4.1.0 (2026-04-25) ===
+ENGINE FIXES
+- Fixed: Starting state now impacts both individuals (security, trust, hope, self-worth, rejection sensitivity, stress, emotion regulation)
+- Fixed: Mood weights increased ~3x so mood changes produce visible 5-8% metric shifts
+- Fixed: Mood changes now properly recalculate individual health bar
+- Fixed: trustInPartner now responds to mood changes
+
+UI STRUCTURE
+- Restored: Relationship health bar at top of center column with color-coded tier
+- Added: Individual health bars matching relationship bar visual style
+- Changed: Relationship Profile, Emotional State, and Influence Matrix are now collapsible sub-accordions under Relationship Metrics
+- Changed: Radar graphs enlarged and responsive (no more clipped text)
+- Changed: Model weights panel now uses grid layout with title at top and Reset at bottom
+- Added: Advanced/Standard mode toggle in header (Standard mode coming soon)
+- Fixed: Wizard icon button backgrounds unified across all instances
+- Changed: UTOK Influence Matrix wired inline under Relationship Metrics
+
+CONTENT & TERMINOLOGY
+- Changed: Version now displays dynamically from D.VERSION (4.1)
+- Changed: Model count now displays dynamically from ENGINE_MODELS.length (12)
+- Added: UTOK as 12th model in ENGINE_MODELS (adjustable weight)
+- Changed: "Whitepaper" renamed to "The Science Behind Novus Love"
+- Changed: "Differentiation: Partial Fusion" renamed to "Emotional Independence" with user-friendly tier labels
+- Changed: Bowen tier labels reworded (Fully Enmeshed, Moderately Blended, Balanced, Independently Connected, Strongly Self-Defined)
+- Updated: All 27 tooltips rewritten in plain, conversational language
+- Updated: Session storage key updated to novus_v4_1
+
+PLANNED FOR v4.1.1
+- Dynamic metric grouping by color tiers (Strengths/Normal/Weaknesses/Concern/Toxic)
+- Cross-metric expansion (individual-scoped relationship metrics)
+- Trademark symbols (MBTI®, Gottman™, Love Language®)
+- Reference summaries in whitepaper
+- Whitepaper content audit
+
+PLANNED FOR v4.2
+- Event Impact Report overhaul (narrative summaries, recommendations)
+- Trauma History feature (ACE-based checkboxes, processing modifiers)
+- Credits Tab (Star Wars scrolling credits)
+- UAT Testing (10+ test cases)
+
+=== v4.0 (2026-04-17) ===
+- Initial multi-file architecture (7 files)
+- 11 psychological models integrated
+- Split novus-data.js into data + models
+- Added novus-utok.js (UTOK Influence Matrix)
+- GitHub Pages deployment
