@@ -1,5 +1,5 @@
 window.Novus={};(function(N){var D={};
-D.VERSION="4.1.3a";
+D.VERSION="4.1.4";
 D.F={emotionRegulation:"Emotion Regulation",selfWorth:"Self-Worth",secureWithPartner:"Security with Partner",hope:"Hope",rejectionSensitivity:"Rejection Sensitivity",trustInPartner:"Trust in Partner",externalStress:"External Stress",selfExpectations:"Self-Expectations",health:"Overall Health",intimacy:"Intimacy",safety:"Safety",trust:"Trust",bond:"Bond",connection:"Connection",meaning:"Meaning",honesty:"Honesty",stability:"Stability",growth:"Growth",tension:"Tension",friction:"Friction",overall:"Overall",passion:"Passion",commitment:"Commitment",sternIntimacy:"Emotional Intimacy",reactivity:"Reactivity",withdrawal:"Withdrawal",attunement:"Attunement",resilience:"Resilience",expressiveness:"Expressiveness",selfRegulation:"Self-Regulation",adaptability:"Adaptability",windowOfTolerance:"Window of Tolerance",satirStance:"Communication Stance",vagalState:"Nervous System State"};
 D.friendly=function(k){return D.F[k]||k.replace(/([A-Z])/g," $1").replace(/^./,function(s){return s.toUpperCase();});};
 D.pct=function(v){return Math.round(v*100);};
@@ -25,4 +25,9 @@ D.PERSONAL_NEG=[{id:"rumination",label:"Rumination",effects:{emotionRegulation:-
 D.CAT_ORDER=["Affection","Quality Time","Support","Growth","Intimacy","Repair","Daily Life","Boundary","External Stress","Neglect","Conflict","Betrayal"];
 
 
+D.INVERTED_METRICS={tension:true,friction:true,rejectionSensitivity:true,externalStress:true};
+D.getMetricLabel=function(value,key){var v=value;if(key&&D.INVERTED_METRICS[key])v=1-v;if(v>=.85)return"Excellent";if(v>=.70)return"Strong";if(v>=.55)return"Good";if(v>=.45)return"Moderate";if(v>=.30)return"Low";if(v>=.15)return"Very Low";return"Critical";};
+D.OCEAN_LABELS={O:["Very Traditional","Traditional","Somewhat Traditional","Balanced","Somewhat Creative","Creative","Very Creative"],C:["Very Flexible","Flexible","Somewhat Flexible","Balanced","Somewhat Disciplined","Disciplined","Very Disciplined"],E:["Very Introverted","Introverted","Somewhat Introverted","Balanced","Somewhat Extraverted","Extraverted","Very Extraverted"],A:["Very Competitive","Competitive","Somewhat Competitive","Balanced","Somewhat Cooperative","Cooperative","Very Cooperative"],N:["Very Calm","Calm","Somewhat Calm","Balanced","Somewhat Reactive","Reactive","Very Reactive"]};
+D.getOceanLabel=function(trait,value){var labels=D.OCEAN_LABELS[trait];if(!labels)return Math.round(value*100)+"%";var idx=Math.min(6,Math.max(0,Math.floor(value*7)));if(idx>=7)idx=6;return labels[idx];};
+D.getIntensityLabel=function(value){if(value>=80)return"Intense";if(value>=60)return"Significant";if(value>=40)return"Moderate";if(value>=20)return"Mild";return"Minimal";};
 N.DATA=D;})(window.Novus);

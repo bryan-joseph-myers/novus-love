@@ -1,2 +1,2 @@
 # novus-love
-Systemic Relationship Dynamics Engine — 11 Psychological Models
+Systemic Relationship Dynamics Engine — 12 Psychological Models

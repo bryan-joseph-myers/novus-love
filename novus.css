@@ -15,7 +15,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .acc-header:hover{background:var(--card)}
 .acc-arrow{font-size:.7rem;flex-shrink:0}
 .acc-title{flex:1}
-.acc-body{padding:.6rem .75rem;border-top:1px solid var(--border)}
+.acc-body{padding:.6rem .75rem;border-top:1px solid var(--border);transition:max-height .3s ease,padding .3s ease;overflow:hidden}
 .sub-acc{border:1px solid var(--border);border-radius:var(--radius);margin-top:.5rem;overflow:hidden}
 .sub-acc-hd{display:flex;align-items:center;gap:.5rem;padding:.4rem .6rem;background:var(--card);cursor:pointer;user-select:none;font-size:.85rem;font-weight:500;color:var(--text2)}
 .sub-acc-hd:hover{background:var(--surface)}
