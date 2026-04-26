@@ -49,15 +49,14 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .meter-label{font-size:.78rem;color:var(--text2);min-width:120px;text-align:right}
 .meter-bar{flex:1;height:8px;background:var(--card);border-radius:4px;overflow:hidden;min-width:60px}
 .meter-fill{height:100%;border-radius:4px;transition:width .4s ease,background .4s ease;width:0}
-.meter-val{font-size:.75rem;min-width:36px;font-weight:600}
+.meter-val{font-size:.75rem;min-width:110px;font-weight:600;text-align:right}
 .info-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:6px 10px;margin-bottom:4px;font-size:.82rem;line-height:1.5}
-.info-card:empty{display:none!important}
 .info-card strong{color:var(--text)}
-.radar-svg{width:100%;max-width:320px;height:auto;display:block;margin:0 auto}
+.radar-svg{width:200px;height:200px;display:block;margin:0 auto}
 .radar-ring{fill:none;stroke:var(--border);stroke-width:.5}
 .radar-spoke{stroke:var(--border);stroke-width:.3}
 .radar-data{fill:rgba(88,166,255,.15);stroke:var(--accent);stroke-width:1.5}
-.radar-label{font-size:9px;fill:var(--text2)}
+.radar-label{font-size:8px;fill:var(--text2)}
 .interaction-panel{padding:.25rem 0}
 .int-controls{display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;flex-wrap:wrap}
 .int-label{font-size:.82rem;color:var(--text2);min-width:80px}
@@ -121,7 +120,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .tl-legend{display:flex;gap:12px;justify-content:center;padding:4px 0;font-size:.75rem;color:var(--text2)}
 .tl-legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
 .rel-radar-wrap{display:flex;justify-content:center;padding:8px 0}
-.rel-radar-svg{width:100%;max-width:350px;height:auto;display:block;margin:0 auto}
+.rel-radar-svg{width:220px;height:220px;display:block;margin:0 auto}
 .config-modal{max-width:600px}
 .config-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;padding:4px 0;border-bottom:1px solid rgba(48,54,61,.3)}
 .config-label{font-size:.82rem;color:var(--text);min-width:140px;font-weight:500}
@@ -225,7 +224,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .narrative-person h4{color:var(--accent);margin-bottom:4px}
 .timeline-svg{width:100%;min-height:280px}
 
-.utok-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.6rem;margin:.5rem 0}
+.utok-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.6rem;margin:.5rem 0;max-width:280px;margin-left:auto;margin-right:auto}
 .utok-card-title{font-size:.82rem;font-weight:600;color:var(--accent);margin-bottom:.4rem;text-align:center}
 
 .rel-health-bar-wrap{margin-bottom:.75rem;padding:.5rem .75rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
@@ -245,3 +244,6 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .wp-weight-item{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:8px 10px;display:flex;flex-direction:column;gap:4px}
 .wp-weight-label{font-size:.8rem;color:var(--text)}
 .wp-weights-footer{text-align:center;margin-top:.75rem;padding-top:.5rem;border-top:1px solid var(--border)}
+
+.info-card:empty{display:none!important}
+.sub-acc-bd:empty{display:none!important}

@@ -51,26 +51,42 @@ html+='<div style="text-align:center;margin-top:4px;font-size:.75rem;color:#8b94
 html+='<div style="font-size:.7rem;color:#8b949e;margin-top:2px;text-align:center">Ring size = autonomy level</div>';
 html+='</div>';if(el)el.innerHTML=html;}
 function renderRel(){
-var el=$("utokRel");var el2=$("utokRelInline");if(!el&&!el2)return;
+var el=$("utokRelInline");if(!el)return;
 var html='<div class="utok-card">';
 html+='<div class="utok-card-title">Influence Matrix — Both Partners</div>';
-html+=utokSVG(null,280,280,true);
+html+=utokSVG(null,240,240,true);
 var imA=E.calcInfluenceMatrix("a"),imB=E.calcInfluenceMatrix("b");
 html+='<div style="display:flex;gap:1rem;justify-content:center;margin-top:6px">';
 html+='<div style="font-size:.75rem"><span style="color:#3fb950">'+S.a.name+':</span> '+E.getUtokQuadrant(imA)+'</div>';
 html+='<div style="font-size:.75rem"><span style="color:#bc8cff">'+S.b.name+':</span> '+E.getUtokQuadrant(imB)+'</div>';
 html+='</div>';
 html+='<div style="font-size:.7rem;color:#8b949e;margin-top:4px;text-align:center">Dashed ring = autonomy level. Closer dots = more aligned relational stance.</div>';
-html+='</div>';if(el)el.innerHTML=html;if(el2)el2.innerHTML=html;}
+html+='<div style="display:flex;gap:.75rem;margin-top:8px;flex-wrap:wrap;justify-content:center">';
+html+='<div style="flex:1;min-width:120px;max-width:180px;background:rgba(63,185,80,.06);border:1px solid #30363d;border-radius:6px;padding:6px 8px">';
+html+='<div style="font-size:.78rem;font-weight:600;color:#3fb950;margin-bottom:4px;text-align:center">'+S.a.name+'</div>';
+html+=dimBar("Power",imA.power,"#58a6ff");
+html+=dimBar("Love",imA.love,"#f85149");
+html+=dimBar("Freedom",imA.freedom,"#3fb950");
+html+='<div style="text-align:center;font-size:.72rem;color:#8b949e;margin-top:3px">'+E.getUtokQuadrant(imA)+'</div>';
+html+='</div>';
+html+='<div style="flex:1;min-width:120px;max-width:180px;background:rgba(188,140,255,.06);border:1px solid #30363d;border-radius:6px;padding:6px 8px">';
+html+='<div style="font-size:.78rem;font-weight:600;color:#bc8cff;margin-bottom:4px;text-align:center">'+S.b.name+'</div>';
+html+=dimBar("Power",imB.power,"#58a6ff");
+html+=dimBar("Love",imB.love,"#f85149");
+html+=dimBar("Freedom",imB.freedom,"#3fb950");
+html+='<div style="text-align:center;font-size:.72rem;color:#8b949e;margin-top:3px">'+E.getUtokQuadrant(imB)+'</div>';
+html+='</div>';
+html+='</div>';
+html+='</div>';if(el)el.innerHTML=html;}
 function injectContainers(){
-var targets=[{after:"emotStateA",id:"utok_a"},{after:"emotStateB",id:"utok_b"},{after:"relRadar",id:"utokRel"}];
+var targets=[{after:"emotStateA",id:"utok_a"},{after:"emotStateB",id:"utok_b"}];
 for(var i=0;i<targets.length;i++){
 var t=targets[i],ref=$(t.after);
 if(ref&&!$(t.id)){var d=document.createElement("div");d.id=t.id;ref.parentNode.insertBefore(d,ref.nextSibling);}
 }
 var bioA=$("bioMetricsA");if(bioA&&!$("utok_a")){var d=document.createElement("div");d.id="utok_a";bioA.parentNode.insertBefore(d,bioA.nextSibling);}
 var bioB=$("bioMetricsB");if(bioB&&!$("utok_b")){var d2=document.createElement("div");d2.id="utok_b";bioB.parentNode.insertBefore(d2,bioB.nextSibling);}
-var relSection=$("relMetrics");if(relSection&&!$("utokRel")){var d3=document.createElement("div");d3.id="utokRel";relSection.parentNode.appendChild(d3);}
+
 }
 function renderAll(){injectContainers();renderInd("a");renderInd("b");renderRel();}
 N.UTOK_UI={renderInd:renderInd,renderRel:renderRel,renderAll:renderAll};
