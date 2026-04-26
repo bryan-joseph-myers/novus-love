@@ -15,7 +15,7 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 .acc-header:hover{background:var(--card)}
 .acc-arrow{font-size:.7rem;flex-shrink:0}
 .acc-title{flex:1}
-.acc-body{padding:.6rem .75rem;border-top:1px solid var(--border);transition:max-height .3s ease,padding .3s ease;overflow:hidden}
+.acc-body{padding:.6rem .75rem;border-top:1px solid var(--border)}
 .sub-acc{border:1px solid var(--border);border-radius:var(--radius);margin-top:.5rem;overflow:hidden}
 .sub-acc-hd{display:flex;align-items:center;gap:.5rem;padding:.4rem .6rem;background:var(--card);cursor:pointer;user-select:none;font-size:.85rem;font-weight:500;color:var(--text2)}
 .sub-acc-hd:hover{background:var(--surface)}
@@ -247,3 +247,46 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 
 .info-card:empty{display:none!important}
 .sub-acc-bd:empty{display:none!important}
+.impact-report{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem;margin-top:.75rem}
+.impact-header{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:.95rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);margin-bottom:.5rem}
+.impact-pos{color:var(--green)}
+.impact-neg{color:var(--red)}
+.impact-icon{font-size:1.1rem}
+.impact-section{margin-bottom:.6rem}
+.impact-section-title{font-weight:600;font-size:.85rem;color:var(--accent);margin-bottom:.25rem}
+.impact-summary{font-size:.82rem;color:var(--text2);line-height:1.5}
+.impact-list{list-style:none;padding:0;font-size:.82rem}
+.impact-list li{padding:2px 0;color:var(--text)}
+.impact-rec{font-size:.8rem;color:var(--text2);padding:3px 0;line-height:1.4}
+.impact-raw-toggle{font-size:.75rem;color:var(--accent);cursor:pointer;margin-top:.5rem;user-select:none}
+.impact-raw-toggle:hover{text-decoration:underline}
+.impact-raw{margin-top:.25rem}
+.impact-raw pre{font-size:.7rem;color:var(--text2);background:var(--bg);padding:.5rem;border-radius:4px;overflow-x:auto;white-space:pre-wrap}
+.trauma-panel{padding:.25rem 0}
+.trauma-cat{margin-bottom:.6rem}
+.trauma-cat-title{font-size:.85rem;font-weight:600;color:var(--accent);padding-bottom:.25rem;border-bottom:1px solid var(--border);margin-bottom:.35rem}
+.trauma-item{padding:3px 0}
+.trauma-label{font-size:.82rem;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:.4rem}
+.trauma-label input{accent-color:var(--accent)}
+.trauma-proc{margin-left:1.2rem;margin-top:3px;margin-bottom:4px}
+.trauma-proc-label{font-size:.72rem;color:var(--text2)}
+.trauma-proc-slider{margin-top:2px}
+.trauma-disclaimer{font-size:.7rem;color:var(--warn);margin-top:.75rem;padding:.5rem;background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.2);border-radius:var(--radius);line-height:1.4}
+.credits-wrap{display:flex;gap:.5rem;height:400px;overflow:hidden}
+.credits-nav{min-width:120px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.4rem;overflow-y:auto}
+.credits-nav-title{font-size:.75rem;font-weight:600;color:var(--accent);padding:.3rem .4rem;border-bottom:1px solid var(--border);margin-bottom:.3rem}
+.credits-nav-item{font-size:.75rem;color:var(--text2);padding:.3rem .4rem;cursor:pointer;border-radius:4px}
+.credits-nav-item:hover{background:var(--card);color:var(--text)}
+.credits-play-btn,.credits-pause-btn{color:var(--green)!important;font-weight:600}
+.credits-viewport{flex:1;overflow-y:auto;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);scroll-behavior:smooth}
+.credits-scroll{padding:1rem}
+.credits-spacer{height:200px}
+.credits-main-title{text-align:center;font-size:1.6rem;font-weight:700;color:var(--accent);letter-spacing:2px;margin-bottom:.25rem}
+.credits-main-sub{text-align:center;font-size:.85rem;color:var(--text2);margin-bottom:.15rem}
+.credits-divider{text-align:center;color:var(--text2);font-size:.8rem;margin:1rem 0;opacity:.5}
+.credits-section{margin-bottom:1.5rem}
+.credits-section-title{text-align:center;font-size:1rem;font-weight:600;color:var(--accent);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:1px}
+.credits-entry{text-align:center;margin-bottom:.5rem}
+.credits-name{font-size:.88rem;font-weight:600;color:var(--text)}
+.credits-role{font-size:.78rem;color:var(--text2)}
+.credits-fin{text-align:center;font-size:1rem;color:var(--accent);margin:2rem 0;font-weight:600}
