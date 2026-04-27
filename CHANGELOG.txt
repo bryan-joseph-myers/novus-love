@@ -1,3 +1,8 @@
+=== v4.5.3 (2026-04-27) ===
+- HOTFIX: N.renderAll() → renderAll() (local function, not exported on N)
+- HOTFIX: Removed old Adjust Model Weights panel (duplicate Reset source)
+- HOTFIX: Disclaimer/NaN fixed by resolving JS error cascade
+
 === v4.5.2 (2026-04-27) ===
 - HOTFIX: E.recalc() → E.recalcAll() (correct engine function name)
 - HOTFIX: Tooltip guards against NaN/undefined display
