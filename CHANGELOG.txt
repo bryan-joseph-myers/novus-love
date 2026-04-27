@@ -1,3 +1,9 @@
+=== v4.5.4 (2026-04-27) ===
+- HOTFIX: Fixed html+=+buildDisclaimer() → html+=buildDisclaimer()
+- Root cause: stray unary + coerced disclaimer HTML string to NaN
+- Fixed: Disclaimer modal now renders and shows on first load
+- Fixed: "NaN" text no longer appears at bottom of page
+- Fixed: Disclaimer accept checkbox + button now wire correctly
 === v4.5.3 (2026-04-27) ===
 - HOTFIX: N.renderAll() → renderAll() (local function, not exported on N)
 - HOTFIX: Removed old Adjust Model Weights panel (duplicate Reset source)
