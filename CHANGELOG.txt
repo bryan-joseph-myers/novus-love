@@ -1,25 +1,19 @@
-=== v4.4.2 (2026-04-27) ===
-COMPREHENSIVE PATCH — All v4.4.x fixes verified and applied from clean source
-
-BUG FIXES
-- P1: Radar viewBox expanded (individual: 300x280, relationship: 320x300)
-- P1: Radar label offsets increased (individual: 28, relationship: 30)
-- P1: Radar CSS responsive (width:100%, overflow:visible)
-- P2: Models table dynamic from ENGINE_MODELS (shows all 12 incl UTOK)
-- P3: Purpose tab model count dynamic (ENGINE_MODELS.length)
-- P4: Whitepaper version text dynamic (D.VERSION)
-- P5: Version bumped to 4.4.2
-
-NOTE: v4.4.1 patches failed to deploy (push script bug — stale Downloads
-files took priority over fresh .txt exports). Fixed in push-novus.ps1.
-This v4.4.2 applies all intended fixes from clean GitHub source.
+=== v4.5.0 (2026-04-27) ===
+- FEATURE: Model Weights panel merged into integrated psychology table
+- New: Checkbox column to toggle individual models on/off
+- New: Clickable weight value opens inline slider to adjust weight
+- New: Per-model reset button restores individual model to default weight
+- New: 'Reset All to Defaults' button resets all weights and re-enables all models
+- Removed: Standalone 'Adjust Model Weights' modal/grid panel
+- Removed: configBtn gear icon from header
+- Changed: Weights auto-normalize when models are toggled or adjusted
 
 FILES CHANGED
+- novus-ui.js (table merge, removed config modal)
+- novus.css (table styles)
 - novus-data.js (version bump)
-- novus-ui.js (P1-P4)
-- novus.css (P1 radar responsive)
-- CHANGELOG.txt (this file)
-- MANIFEST.json (metadata)
+- CHANGELOG.txt
+- MANIFEST.json
 
 === v4.1.2 (2026-04-25) ===
 HOTFIX — Direct source edits (no patch overlay)
