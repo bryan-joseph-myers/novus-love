@@ -1,0 +1,55 @@
+{
+  "project": "novus-love",
+  "version": "4.4.1",
+  "updated": "2026-04-27T06:51:00-05:00",
+  "files": {
+    "novus-ui.js": {
+      "size": 79298,
+      "sha256": "7bc68a08ff53cf9f",
+      "modified": true,
+      "version": "4.4.1"
+    },
+    "novus-models.js": {
+      "size": 58030,
+      "sha256": "21ce91564f76e284",
+      "modified": true,
+      "version": "4.4.1"
+    },
+    "novus-data.js": {
+      "size": 47326,
+      "sha256": "f840ce41c68b0fbe",
+      "modified": true,
+      "version": "4.4.1"
+    },
+    "novus-engine.js": {
+      "size": 25993,
+      "sha256": "c1aece3325f51151",
+      "modified": false,
+      "version": "4.4.0"
+    },
+    "novus-utok.js": {
+      "size": 7570,
+      "sha256": "f9eaf06f73f7d6c7",
+      "modified": false,
+      "version": "4.4.0"
+    },
+    "novus.css": {
+      "size": 24055,
+      "sha256": "8a0fef62abf1e4ac",
+      "modified": false,
+      "version": "4.4.0"
+    },
+    "index.html": {
+      "size": 659,
+      "sha256": "368dc26ff11d6f21",
+      "modified": false,
+      "version": "4.4.0"
+    },
+    "CHANGELOG.txt": {
+      "size": 4112,
+      "sha256": "987c811a54960ca9",
+      "modified": true,
+      "version": "4.4.1"
+    }
+  }
+}
