@@ -1,3 +1,22 @@
+=== v4.4.1 (2026-04-27) ===
+HOTFIX — Bug fixes only, zero new features
+
+BUG FIXES
+- P1: Radar viewBox expanded (individual: 220→280, relationship: 240→300) to eliminate label clipping
+- P2: Model count updated from hardcoded "11" to "12" in Purpose tab
+- P3: Models table made dynamic from ENGINE_MODELS array (if applied)
+- P4: Duplicate getMetricLabel removed from models.js (if applied)
+- P5: Duplicate getOceanLabel removed from models.js (if applied)
+
+VERSION
+- Bumped D.VERSION to "4.4.1"
+
+FILES CHANGED
+- novus-ui.js (P1 radar, P2 count, P3 table)
+- novus-models.js (P4, P5 duplicate removal)
+- novus-data.js (version bump)
+- CHANGELOG.txt (this file)
+
 === v4.1.2 (2026-04-25) ===
 HOTFIX — Direct source edits (no patch overlay)
 
