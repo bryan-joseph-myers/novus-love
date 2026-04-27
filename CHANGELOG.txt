@@ -1,3 +1,9 @@
+=== v4.5.1 (2026-04-27) ===
+- HOTFIX: Start screen/disclaimer now shows (removed orphan config modal calls from initApp)
+- HOTFIX: NaN at bottom resolved (weight value guards undefined + isNaN fallback)
+- HOTFIX: S.weights/S.modelsOff initialized before first table render
+- HOTFIX: All configModal/configBtn orphan refs cleaned
+
 === v4.5.0 (2026-04-27) ===
 - FEATURE: Model Weights panel merged into integrated psychology table
 - New: Checkbox column to toggle individual models on/off
