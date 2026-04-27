@@ -1,3 +1,8 @@
+=== v4.5.2 (2026-04-27) ===
+- HOTFIX: E.recalc() → E.recalcAll() (correct engine function name)
+- HOTFIX: Tooltip guards against NaN/undefined display
+- HOTFIX: Weight percentage display guards against NaN
+
 === v4.5.1 (2026-04-27) ===
 - HOTFIX: Start screen/disclaimer now shows (removed orphan config modal calls from initApp)
 - HOTFIX: NaN at bottom resolved (weight value guards undefined + isNaN fallback)
