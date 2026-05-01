@@ -1,3 +1,11 @@
+=== v4.6.0 (2026-05-01) ===
+- Removed duplicate Emotional State section from individual panels (was listed twice)
+- Removed duplicate Body Response section from individual panels (was listed twice)
+- Removed duplicate Suggestions section from individual panels
+- Removed empty blank cell under "Why These Weights?" paragraph
+- Removed redundant name display in profile panel (accordion title already shows name)
+- Cache bust updated to ?v=460
+
 === v4.5.4 (2026-04-27) ===
 - HOTFIX: Fixed html+=+buildDisclaimer() → html+=buildDisclaimer()
 - Root cause: stray unary + coerced disclaimer HTML string to NaN
