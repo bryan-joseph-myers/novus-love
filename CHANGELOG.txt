@@ -1,3 +1,12 @@
+=== v4.6.1 (2026-05-01) ===
+- Added tooltips to OCEAN personality slider labels (all 5 traits)
+- Added tooltips to Mental Health column headers (Diagnosis, Intensity, Selected)
+- Added tooltips to Body Response items (heart rate, breathing, cortisol, etc.)
+- Added tooltips to Emotional State items (Mood, Health, Stress Tolerance, Communication, Nervous System)
+- Added tier descriptions to individual health bar (Thriving through In Crisis)
+- Added tier descriptions to relationship health bar (Flourishing through Collapsed)
+- Added tooltips to radar graph dimension labels (8 dimensions)
+
 === v4.6.0 (2026-05-01) ===
 - Removed duplicate Emotional State section from individual panels (was listed twice)
 - Removed duplicate Body Response section from individual panels (was listed twice)
